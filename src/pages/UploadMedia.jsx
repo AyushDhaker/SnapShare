@@ -110,7 +110,7 @@ export default function UploadMedia() {
         formData.append("eventId", selectedEventId);
 
         // 2. Send to our Backend API (which sends to AWS S3)
-        const response = await fetch("http://localhost:5000/api/upload/media", {
+        const response = await fetch("https://snapshare-backend-zqhh.onrender.com/api/upload/media", {
           method: "POST",
           body: formData,
         });
@@ -151,7 +151,7 @@ export default function UploadMedia() {
 
         // 4. Fire-and-forget Smart Tagging (Only for Images)
         if (file.type.startsWith("image/")) {
-          fetch("http://localhost:5000/api/tags/generate", {
+          fetch("https://snapshare-backend-zqhh.onrender.com/api/tags/generate", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"

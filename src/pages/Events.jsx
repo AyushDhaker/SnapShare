@@ -50,7 +50,7 @@ export default function Events() {
     
     setIsDeletingEvent(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/delete/event/${eventToDelete.id}`, {
+      const res = await fetch(`https://snapshare-backend-zqhh.onrender.com/api/delete/event/${eventToDelete.id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ uid: currentUser.uid })

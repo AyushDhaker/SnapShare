@@ -39,7 +39,7 @@ export default function Profile() {
     formData.append("uid", currentUser.uid);
 
     try {
-      const response = await fetch("http://localhost:5000/api/faces/register", {
+      const response = await fetch("https://snapshare-backend-zqhh.onrender.com/api/faces/register", {
         method: "POST",
         body: formData
       });

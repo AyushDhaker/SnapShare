@@ -226,7 +226,7 @@ export default function EventDetails() {
     setIsDeletingMedia(true);
     
     try {
-      const response = await fetch(`http://localhost:5000/api/delete/media/${mediaToDelete.id}`, {
+      const response = await fetch(`https://snapshare-backend-zqhh.onrender.com/api/delete/media/${mediaToDelete.id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ uid: currentUser.uid })
