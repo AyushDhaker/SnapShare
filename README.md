@@ -66,3 +66,63 @@ SnapShare-AI/
 ├── index.html               # Main HTML template
 ├── package.json             # Frontend dependencies
 └── vite.config.js           # Vite configuration
+
+```
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/AyushDhaker/SnapShare.git
+cd SnapShare
+```
+
+### Frontend Setup
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+### Environment Variables
+
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=5000
+AWS_REGION=your-region
+AWS_ACCESS_KEY_ID=your-key
+AWS_SECRET_ACCESS_KEY=your-secret
+AWS_BUCKET_NAME=your-bucket
+```
+
+Configure Firebase Admin credentials and Firestore access before starting the backend server.
+
+
+
+## 🚀 Live Demo
+
+Frontend: https://snap-share-orpin.vercel.app/
+
+Backend: https://snapshare-backend-zqhh.onrender.com
+
+
+## 🔮 Future Enhancements
+
+- Mobile Application Support
+- Advanced Face Clustering
+- Event Analytics Dashboard
+- AI-based Photo Recommendations
+- Multi-Club Management
+- QR-based Event Access
+
+
